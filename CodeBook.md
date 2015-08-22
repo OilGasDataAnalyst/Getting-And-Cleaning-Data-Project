@@ -1,17 +1,34 @@
-# Getting-And-Cleaning-Data-Project
-Courser Getting and Cleaning Data course project
+Introduction
+The script run_analysis.R performs the 5 steps described in the course project's definition.
 
-This repository hosts the R code and documentation files for the Data Science's track course "Getting and Cleaning data", available in coursera.
+1. Read in the various data sets
+2. Merge the training and test sets into 3 variables
+3. Name the activity & subject dataset
+4. Read in the features names and apply it to the X data, only on the 2nd column
+5. Get all the data together into "AllData"
+6. To get the mean & std only need to use grep function to filter out the wanted names
+7. Apply these to the AllData
+8. Read in the activity labels and apply it to the "activity" column 
+9. Label the data set with descripitive variable names
+10. Create the tidydata.txt data set thats the mean of the data, for the subject & activity
 
-The dataset being used is: Human Activity Recognition Using Smartphones
-http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-Files
+Variables
 
-https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+TestSub = subject #'s for TestX
+TestX = raw data
+TestY = activity info for TestX & Test Sub
+TrainSub = subject #'s for TestX
+TrainX = raw data
+TrainY = activity info for TestY & Train Sub
+XData = combined x data
+YData = combined y data
+SubData = combined sub data
+FeaturesNames = data from the features.txt data in the dataset, applied to xData
+Combined1 = used in first stem of combining all the data
+AllData = self explanitory, all the data
+WantedNames = used to filter out the names we want
+WantedData = subset of AllData, this is what we want to analyize
+activityLabels = data from the activity_labels.txt, applied to the "activity" column in the wanted data
+TidyData = final data set that we want to use to creat the tidydata.txt
 
-CodeBook.md describes the variables, the data, and any transformations or work that was performed to clean up the data.
-
-run_analysis.R contains all the code to perform the analyses described in the 5 steps. They can be launched in RStudio by just importing the file.
-
-The output of the 5th step is called tidydata.txt, and uploaded in the course project's form.
