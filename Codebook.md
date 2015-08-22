@@ -13,7 +13,7 @@ Codebook
 10. Create the tidydata.txt data set thats the mean of the data, for the subject & activity
 
 #Variables
-TestSub = subject #'s for TestX
+TestSub = subject #'s for TestX;
 TestX = raw data
 TestY = activity info for TestX & Test sub
 TrainX = raw data
