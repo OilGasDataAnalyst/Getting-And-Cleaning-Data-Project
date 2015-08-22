@@ -28,3 +28,5 @@ WantedNames = used to filter out the names we want
 WantedData = subset of AllData, this is what we want to analyize
 activityLabels = data from the activity_labels.txt file, applied to the "activity" column in the wanted data
 TidyData = final data set that we want to use to create the tidydata.txt file
+
+test...
